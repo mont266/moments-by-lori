@@ -29,6 +29,18 @@ export const DefaultPageTemplate = ({
   </main>
 )
 
+<section className="BackgroundVideo-section section">
+<BackgroundVideo poster={videoPoster} videoTitle={videoTitle}>
+  {video && <source src={video} type="video/mp4" />}
+</BackgroundVideo>
+</section>
+
+<section className="section">
+<div className="container">
+  <Accordion items={accordion} />
+</div>
+</section>
+
 const DefaultPage = ({ data: { page } }) => (
   <Layout
     meta={page.frontmatter.meta || false}
