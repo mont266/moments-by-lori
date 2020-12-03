@@ -64,6 +64,13 @@ export const pageQuery = graphql`
         title
         subtitle
         featuredImage
+        video
+        videoPoster
+        videoTitle
+        accordion {
+          title
+          description
+        }
       }
     }
   }
