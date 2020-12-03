@@ -14,8 +14,6 @@ export const ComponentsPageTemplate = ({
   title,
   subtitle,
   featuredImage,
-  section1,
-  section2,
   video,
   videoPoster,
   videoTitle,
@@ -31,20 +29,8 @@ export const ComponentsPageTemplate = ({
     />
     <section className="section">
       <div className="container">
-        <Content source={section1} />
-      </div>
-    </section>
-
-    <section className="section">
-      <div className="container">
         <h2>Our gallery component</h2>
         <Gallery images={gallery} />
-      </div>
-    </section>
-
-    <section className="section">
-      <div className="container">
-        <Content source={section2} />
       </div>
     </section>
 
