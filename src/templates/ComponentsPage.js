@@ -49,7 +49,7 @@ export const ComponentsPageTemplate = ({
     <section className="section">
       <div className="container">
         <Popup>
-          <Content source={section1} />
+          <Content source={subtitle} />
         </Popup>
       </div>
     </section>
