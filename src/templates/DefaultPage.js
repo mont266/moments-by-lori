@@ -11,6 +11,10 @@ export const DefaultPageTemplate = ({
   title,
   subtitle,
   featuredImage,
+  video,
+  videoPoster,
+  videoTitle,
+  accordion,
   body
 }) => (
   <main className="DefaultPage">
@@ -26,20 +30,20 @@ export const DefaultPageTemplate = ({
         <SVGIcon src="/images/calendar.svg" />
       </div>
     </section>
+
+    <section className="BackgroundVideo-section section">
+      <BackgroundVideo poster={videoPoster} videoTitle={videoTitle}>
+        {video && <source src={video} type="video/mp4" />}
+      </BackgroundVideo>
+    </section>
+
+    <section className="section">
+      <div className="container">
+        <Accordion items={accordion} />
+      </div>
+    </section>
   </main>
 )
-
-<section className="BackgroundVideo-section section">
-<BackgroundVideo poster={videoPoster} videoTitle={videoTitle}>
-  {video && <source src={video} type="video/mp4" />}
-</BackgroundVideo>
-</section>
-
-<section className="section">
-<div className="container">
-  <Accordion items={accordion} />
-</div>
-</section>
 
 const DefaultPage = ({ data: { page } }) => (
   <Layout
