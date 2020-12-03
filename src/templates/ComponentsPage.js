@@ -29,7 +29,7 @@ export const ComponentsPageTemplate = ({
     />
     <section className="section">
       <div className="container">
-        <h2>Our gallery component</h2>
+        <h2></h2>
         <Gallery images={gallery} />
       </div>
     </section>
@@ -43,14 +43,6 @@ export const ComponentsPageTemplate = ({
     <section className="section">
       <div className="container">
         <Accordion items={accordion} />
-      </div>
-    </section>
-
-    <section className="section">
-      <div className="container">
-        <Popup>
-          <Content source={subtitle} />
-        </Popup>
       </div>
     </section>
   </main>
