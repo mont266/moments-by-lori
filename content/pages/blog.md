@@ -1,10 +1,10 @@
 ---
 template: BlogIndex
 slug: blog
-title: Blog Page
-featuredImage: 'https://ucarecdn.com/b6254577-26bf-4b79-aa9b-f3793e2aebdc/'
-subtitle: This is the blog page subtitle.
+title: Blog
+featuredImage: https://ucarecdn.com/1dffb682-b82b-410e-b53c-be8c0a0a6d67/
+subtitle: Moments by Lori Updates
 meta:
-  description: This is a meta description.
-  title: Blog Page
+  description: The easiest way to stay updated with Moments by Lori.
+  title: Blog
 ---
