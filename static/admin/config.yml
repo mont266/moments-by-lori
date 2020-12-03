@@ -138,7 +138,7 @@ collections: # A list of collections the CMS should be able to edit
                 }
 
       - file: 'content/pages/components.md'
-        label: 'Components Page'
+        label: 'Gallery Page'
         name: 'components-page'
         fields:
           - {
@@ -191,7 +191,8 @@ collections: # A list of collections the CMS should be able to edit
                   widget: boolean,
                   required: false,
                 }
-        - file: 'content/pages/services.md'
+
+      - file: 'content/pages/services.md'
         label: 'Services Page'
         name: 'services-page'
         fields:
