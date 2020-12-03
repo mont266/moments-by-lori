@@ -1,9 +1,9 @@
 ---
 template: HomePage
-slug: ''
+slug: ""
 title: Moments by Lori
-featuredImage: 'https://ucarecdn.com/159203d3-881d-4218-baa1-ca4427b48d0d/'
-subtitle: ' Moments by Lori | Quality photography in Northern Ireland.'
+featuredImage: https://ucarecdn.com/05d6fc71-9641-41e4-a769-3245117bcbf6/
+subtitle: " Moments by Lori | Quality photography in Northern Ireland."
 meta:
   description: This is a meta description.
   title: Moments by Lori
