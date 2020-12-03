@@ -78,8 +78,6 @@ export const pageQuery = graphql`
         template
         subtitle
         featuredImage
-        section1
-        section2
         video
         videoPoster
         videoTitle
