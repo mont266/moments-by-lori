@@ -14,10 +14,6 @@ export const ComponentsPageTemplate = ({
   title,
   subtitle,
   featuredImage,
-  video,
-  videoPoster,
-  videoTitle,
-  accordion,
   body,
   gallery
 }) => (
@@ -31,12 +27,6 @@ export const ComponentsPageTemplate = ({
       <div className="container">
         <h2></h2>
         <Gallery images={gallery} />
-      </div>
-    </section>
-
-    <section className="section">
-      <div className="container">
-        <Accordion items={accordion} />
       </div>
     </section>
   </main>
@@ -64,10 +54,6 @@ export const pageQuery = graphql`
         template
         subtitle
         featuredImage
-        accordion {
-          title
-          description
-        }
       }
     }
   }

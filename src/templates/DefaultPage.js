@@ -13,9 +13,6 @@ export const DefaultPageTemplate = ({
   title,
   subtitle,
   featuredImage,
-  video,
-  videoPoster,
-  videoTitle,
   accordion,
   body
 }) => (
@@ -53,9 +50,6 @@ export const pageQuery = graphql`
         title
         subtitle
         featuredImage
-        video
-        videoPoster
-        videoTitle
         accordion {
           title
           description
