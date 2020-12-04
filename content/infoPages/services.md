@@ -11,11 +11,13 @@ videoPoster: https://ucarecdn.com/69ba14a8-6481-4671-abb6-0e6f0d9c3e46/
 videoTitle: Also background videos, with poster image & title overlay.
 accordion:
   - description: Test
-    title: Taciti lorem
+    title: Wedding Photography
   - description: Taciti lorem tempor quam vestibulum dis habitasse
-    title: Taciti lorem
+    title: Portraiture
   - description: Taciti lorem tempor quam vestibulum dis habitasse
-    title: Taciti lorem
+    title: Home Visit Photography
   - description: Taciti lorem tempor quam vestibulum dis habitasse
-    title: Taciti lorem
+    title: Business and Commercial Headshots
+  - description: Taciti lorem tempor quam vestibulum dis habitasse
+    title: Photo Restoration
 ---

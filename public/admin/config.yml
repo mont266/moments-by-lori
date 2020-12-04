@@ -162,7 +162,7 @@ collections: # A list of collections the CMS should be able to edit
                   name: noindex,
                   widget: boolean,
                   required: false,
-                }         
+                }
 
       - file: 'content/pages/home.md'
         label: 'Home Page'
