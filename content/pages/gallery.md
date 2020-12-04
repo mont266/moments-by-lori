@@ -4,18 +4,6 @@ slug: gallery
 title: Gallery
 featuredImage: https://ucarecdn.com/df0dc650-6938-412f-aefb-2019d2349e13/
 subtitle: Some of my favourite photos.
-video: https://ucarecdn.com/2516a5fa-0b5a-4ca8-85fb-ff7e33cdb3df/
-videoPoster: https://ucarecdn.com/728ff26b-a253-43fa-9068-0292e56e6343/
-videoTitle: .
-accordion:
-  - description: Taciti lorem tempor quam vestibulum dis habitasse
-    title: Taciti lorem
-  - description: Taciti lorem tempor quam vestibulum dis habitasse
-    title: Taciti lorem
-  - description: Taciti lorem tempor quam vestibulum dis habitasse
-    title: Taciti lorem
-  - description: Taciti lorem tempor quam vestibulum dis habitasse
-    title: Taciti lorem
 gallery:
   - alt: "1"
     image: https://ucarecdn.com/6decb8a5-8ca1-45f4-9a6c-890e8bf08f36/
