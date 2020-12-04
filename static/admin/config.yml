@@ -2,6 +2,7 @@
 backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
+  logo_url: https://wonderful-lumiere-f0c215.netlify.app/images/logo.svg
 
 # display_url: https://gatsbro.netlify.com # This url will display in the top-right of the CMS
 media_library:
@@ -43,36 +44,8 @@ collections: # A list of collections the CMS should be able to edit
             }
           - { label: Subtitle, name: subtitle, widget: markdown }
           - { label: Body, name: body, widget: markdown }
-          - { label: Address, name: address, widget: text }
           - { label: Phone, name: phone, widget: string }
           - { label: Email Address, name: email, widget: string }
-          - name: locations
-            label: locations
-            widget: list
-            fields:
-              - {
-                  name: mapLink,
-                  label: mapLink,
-                  widget: string,
-                  required: false,
-                  default: '',
-                }
-              - {
-                  name: lat,
-                  label: latitude,
-                  widget: string,
-                  required: false,
-                  delete: false,
-                  default: '',
-                }
-              - {
-                  name: lng,
-                  label: longitude,
-                  widget: string,
-                  required: false,
-                  delete: false,
-                  default: '',
-                }
           - label: 'Meta'
             required: false
             name: 'meta'
@@ -137,9 +110,9 @@ collections: # A list of collections the CMS should be able to edit
                   required: false,
                 }
 
-      - file: 'content/pages/components.md'
+      - file: 'content/pages/gallery.md'
         label: 'Gallery Page'
-        name: 'components-page'
+        name: 'gallery-page'
         fields:
           - {
               label: Template,
@@ -147,13 +120,10 @@ collections: # A list of collections the CMS should be able to edit
               widget: hidden,
               default: ComponentsPage,
             }
-          - { label: Slug, name: slug, widget: hidden, default: 'components' }
+          - { label: Slug, name: slug, widget: hidden, default: 'gallery' }
           - { label: Title, name: title, widget: string }
           - { label: Featured Images, name: featuredImage, widget: image }
           - { label: Subtitle, name: subtitle, widget: markdown }
-          - { name: video, label: video, widget: file }
-          - { name: videoPoster, label: videoPoster, widget: image }
-          - { label: videoTitle, name: videoTitle, widget: string }
           - label: 'accordion'
             name: 'accordion'
             widget: 'list'
@@ -191,55 +161,6 @@ collections: # A list of collections the CMS should be able to edit
                   widget: boolean,
                   required: false,
                 }
-
-      - file: 'content/pages/services.md'
-        label: 'Services Page'
-        name: 'services-page'
-        fields:
-          - {
-              label: Template,
-              name: template,
-              widget: hidden,
-              default: ComponentsPage,
-            }
-          - { label: Slug, name: slug, widget: hidden, default: 'services' }
-          - { label: Title, name: title, widget: string }
-          - { label: Featured Images, name: featuredImage, widget: image }
-          - { label: Subtitle, name: subtitle, widget: markdown }
-          - { name: video, label: video, widget: file }
-          - { name: videoPoster, label: videoPoster, widget: image }
-          - { label: videoTitle, name: videoTitle, widget: string }
-          - label: 'accordion'
-            name: 'accordion'
-            widget: 'list'
-            fields:
-              - { name: title, label: title, widget: string, default: '' }
-              - { name: description, label: description, widget: string }
-          - label: 'Meta'
-            required: false
-            name: 'meta'
-            widget: 'object'
-            fields:
-              - { label: Title, name: title, widget: string, required: false }
-              - {
-                  label: Description,
-                  name: description,
-                  widget: text,
-                  required: false,
-                }
-              - {
-                  label: Canonical Link,
-                  name: canonicalLink,
-                  widget: string,
-                  required: false,
-                }
-              - {
-                  label: Noindex,
-                  name: noindex,
-                  widget: boolean,
-                  required: false,
-                }
-          
 
       - file: 'content/pages/home.md'
         label: 'Home Page'

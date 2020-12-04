@@ -2,6 +2,7 @@
 backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
+  logo_url: https://wonderful-lumiere-f0c215.netlify.app/images/logo.svg
 
 # display_url: https://gatsbro.netlify.com # This url will display in the top-right of the CMS
 media_library:
@@ -123,9 +124,6 @@ collections: # A list of collections the CMS should be able to edit
           - { label: Title, name: title, widget: string }
           - { label: Featured Images, name: featuredImage, widget: image }
           - { label: Subtitle, name: subtitle, widget: markdown }
-          - { name: video, label: video, widget: file }
-          - { name: videoPoster, label: videoPoster, widget: image }
-          - { label: videoTitle, name: videoTitle, widget: string }
           - label: 'accordion'
             name: 'accordion'
             widget: 'list'
