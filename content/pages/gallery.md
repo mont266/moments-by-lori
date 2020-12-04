@@ -1,6 +1,6 @@
 ---
 template: ComponentsPage
-slug: components
+slug: gallery
 title: Gallery
 featuredImage: https://ucarecdn.com/df0dc650-6938-412f-aefb-2019d2349e13/
 subtitle: Some of my favourite photos.
