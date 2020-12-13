@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import { PhotoSwipe } from 'react-photoswipe'
 import Image from './Image'
+import Row from '../components/Row'
+import * as S from '../components/Columns/styled'
 
 import _kebabCase from 'lodash/kebabCase'
 
@@ -80,30 +82,36 @@ export default class Gallery extends Component {
     const { images } = this.props
     return (
       <Fragment>
-        {images && images.length > 0 && (
-          <div className="Gallery">
-            {images.map((image, index) => (
-              <div
-                className="Gallery--Item"
-                key={_kebabCase(image.alt) + '-' + index}
-                onClick={() => this.isOpen(true, index)}
-                onKeyDown={this.handleKeyDown}
-                tabIndex={0}
-                aria-label="Toggle Gallery"
-                role="button"
-              >
-                <div>
-                  <Image
-                    resolutions="small"
-                    src={image.image}
-                    alt={image.alt}
-                  />
-                </div>
-                {image.title && <figcaption>{image.title}</figcaption>}
-              </div>
-            ))}
-          </div>
-        )}
+          {images && images.length > 0 && (
+            <div>
+              <Row>
+              {images.map((image, index) => (
+                <S.ImageColumn>
+                  <S.PostItemWrapper>
+                    <div
+                      className="Gallery--Item"
+                      key={_kebabCase(image.alt) + '-' + index}
+                      onClick={() => this.isOpen(true, index)}
+                      onKeyDown={this.handleKeyDown}
+                      tabIndex={0}
+                      aria-label="Toggle Gallery"
+                      role="button"
+                    >
+                      <div>
+                        <Image
+                          resolutions="small"
+                          src={image.image}
+                          alt={image.alt}
+                        />
+                      </div>
+                      {image.title && <figcaption>{image.title}</figcaption>}
+                    </div>
+                  </S.PostItemWrapper>
+                </S.ImageColumn>
+              ))}
+              </Row>
+            </div>
+          )}
         {this.state.loaded && this.state.sliderImages.length > 0 && (
           <PhotoSwipe
             isOpen={this.state.isOpen}

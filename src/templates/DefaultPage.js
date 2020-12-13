@@ -2,11 +2,8 @@ import React from 'react'
 import { graphql } from 'gatsby'
 
 import PageHeader from '../components/PageHeader'
-import Content from '../components/Content'
 import Layout from '../components/Layout'
-import SVGIcon from '../components/SVGIcon'
 import Accordion from '../components/Accordion'
-import BackgroundVideo from '../components/BackgroundVideo'
 
 // Export Template for use in CMS preview
 export const DefaultPageTemplate = ({
