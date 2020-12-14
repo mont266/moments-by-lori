@@ -1,19 +1,19 @@
 ---
-template: ContactPage
 slug: contact
-title: Contact Us
-featuredImage: https://ucarecdn.com/c4d523fb-5a0a-4b86-8f09-eb1a97f5deac/-/preview/-/grayscale/
-subtitle: The easiest way to get in touch.
-address: 404 James St, Burleigh Heads QLD 4220
+featuredImage: https://ucarecdn.com/77e64116-0a8f-4eff-a57b-30aa7518d505/
 phone: 0987 123 456
+meta:
+  description: This is a meta description.
+  title: Contact Page
+address: 404 James St, Burleigh Heads QLD 4220
+template: ContactPage
+title: Contact Us
+subtitle: The easiest way to get in touch.
 email: example@example.com
 locations:
   - lat: "-27.9654732"
     lng: "153.2432449"
     mapLink: ""
-meta:
-  description: This is a meta description.
-  title: Contact Page
 ---
 
 # Example contact form
