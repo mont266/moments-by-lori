@@ -2,7 +2,7 @@
 template: ComponentsPage
 slug: gallery
 title: Gallery
-featuredImage: https://ucarecdn.com/df0dc650-6938-412f-aefb-2019d2349e13/
+featuredImage: https://ucarecdn.com/f092f04a-435b-469b-9139-a5091df0d673/
 subtitle: Some of my favourite photos.
 gallery:
   - alt: "1"
