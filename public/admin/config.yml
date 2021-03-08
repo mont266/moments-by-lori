@@ -209,7 +209,7 @@ collections: # A list of collections the CMS should be able to edit
       preview: true
     folder: content/infoPages
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-    create: true # Allow users to create new documents in this collection
+    create: false # Allow users to create new documents in this collection
     fields:
       - {
           label: Template,
@@ -240,6 +240,13 @@ collections: # A list of collections the CMS should be able to edit
               required: false,
             }
           - { label: Noindex, name: noindex, widget: boolean, required: false }
+          - label: 'Accordion'
+            name: 'accordion'
+            widget: 'list'
+            required: false
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: Content, name: content, widget: text }
 
   - name: posts
     label: Post
