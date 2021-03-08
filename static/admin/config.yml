@@ -197,7 +197,7 @@ collections: # A list of collections the CMS should be able to edit
                 }
 
   - name: posts
-    label: Post
+    label: Blog Posts
     editor:
       preview: true
     folder: content/posts
