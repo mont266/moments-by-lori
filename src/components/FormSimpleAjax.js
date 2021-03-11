@@ -5,6 +5,15 @@ import { serialize } from 'dom-form-serializer'
 
 import './Form.css'
 
+function encode(data) {
+  return Object.keys(data)
+      .map(
+          (key) =>
+              encodeURIComponent(key) + '=' + encodeURIComponent(data[key])
+      )
+      .join('&')
+}
+
 class Form extends React.Component {
   static defaultProps = {
     name: 'Contact Form',
@@ -14,6 +23,8 @@ class Form extends React.Component {
     errorMessage:
       'There is a problem, your message has not been sent, please try contacting us via email'
   }
+
+  
 
   state = {
     alert: '',
