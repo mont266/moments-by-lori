@@ -1,7 +1,7 @@
 import React from 'react'
 import { navigate } from 'gatsby-link'
 
-import '../form.css'
+import './contact.css'
 
 function encode(data) {
   return Object.keys(data)
