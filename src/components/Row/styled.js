@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from 'styled-components'
 import media, { generateMedia } from 'styled-media-query'
 
