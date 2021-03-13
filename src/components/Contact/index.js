@@ -35,7 +35,7 @@ export default function Contact() {
     <div>
       <h1>Contact</h1>
       <form
-        className={'Form'}
+        className="Form"
         name="contact"
         method="post"
         action="/"
@@ -50,7 +50,7 @@ export default function Contact() {
             Don’t fill this out: <input name="bot-field" onChange={handleChange} />
           </label>
         </p>
-        <p>
+        <div className="Form--Group">
         <label className="Form--Label">
               <input
                 className="Form--Input Form--InputText"
@@ -61,9 +61,8 @@ export default function Contact() {
                 required
               />
               <span>Your name:</span>
-            </label>
-        </p>
-        <p>
+        </label>
+        <br />
         <label className="Form--Label">
             <input
               className="Form--Input Form--InputText"
@@ -75,8 +74,7 @@ export default function Contact() {
             />
             <span>Your email:</span>
           </label>
-        </p>
-        <p>
+          <br />
         <label className="Form--Label has-arrow">
             <select
               className="Form--Input Form--Select"
@@ -93,8 +91,7 @@ export default function Contact() {
               <option>Other Enquiry</option>
             </select>
           </label>
-        </p>
-        <p>
+          <br />
         <label className="Form--Label">
             <textarea
               className="Form--Input Form--Textarea Form--InputText"
@@ -106,10 +103,9 @@ export default function Contact() {
             />
             <span>Message:</span>
           </label>
-        </p>
-        <p>
+          <br />
           <button className={'Button Form--SubmitButton'} type="submit">Send</button>
-        </p>
+        </div>
       </form>
     </div>
   )

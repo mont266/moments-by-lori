@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    max-width: 500px;
+    max-width: 100%;
     margin: 2.5rem 0;
   }
   
@@ -14,13 +14,13 @@
   .Form--Group {
     position: relative;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
     justify-content: space-between;
   }
   
   .Form--Group .Form--Label {
-    width: calc(50% - 1rem);
+    width: 100%;
   }
   
   .Form--Label {
@@ -100,6 +100,7 @@
   }
   
   .Form--Input:-webkit-autofill {
+    box-shadow: 0 0 0 1000px white inset !important;
     -webkit-box-shadow: 0 0 0 1000px white inset !important;
   }
   

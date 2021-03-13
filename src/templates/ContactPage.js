@@ -4,6 +4,7 @@ import { graphql } from 'gatsby'
 
 import PageHeader from '../components/PageHeader'
 import Contact from '../components/Contact'
+import Row from '../components/Row'
 import Content from '../components/Content'
 import Layout from '../components/Layout'
 import './ContactPage.css'
@@ -43,9 +44,7 @@ export const ContactPageTemplate = ({
           </div>
         </div>
 
-        <div>
           <Contact />
-        </div>
       </div>
     </section>
   </main>
