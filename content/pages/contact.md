@@ -9,7 +9,7 @@ address: 404 James St, Burleigh Heads QLD 4220
 template: ContactPage
 title: Contact Us
 subtitle: The easiest way to get in touch.
-email: example@example.com
+email: ""
 locations:
   - lat: "-27.9654732"
     lng: "153.2432449"
