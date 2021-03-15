@@ -1,7 +1,7 @@
 ---
 slug: contact
 featuredImage: https://ucarecdn.com/77e64116-0a8f-4eff-a57b-30aa7518d505/
-phone: 0987 123 456
+phone: 074 9124 7853
 meta:
   description: This is a meta description.
   title: Contact Page
@@ -15,13 +15,12 @@ locations:
     lng: "153.2432449"
     mapLink: ""
 ---
+# Get in Touch.
 
-# Example contact form
+One of the easiest ways to get in touch is by using this contact form on my site or by contacting me directly via social media. 
 
-This form is setup to use Netlify's form handling:
+I will try to get back to any queries or messages sent using this form within 24 hours.
 
-- the form action is set to the current absolute url: `action: '/contact/'`
-- a name attribute is sent with the form's data `'form-name': 'Contact'`
-- netlify data attributes are added to the form `data-netlify data-netlify-honeypot`
+Thank you.
 
-Find out more in the [Netlify Docs](https://www.netlify.com/docs/form-handling/).
+\-Lori
