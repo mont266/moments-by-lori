@@ -1,15 +1,15 @@
 ---
+template: ContactPage
 slug: contact
+title: Contact Us
 featuredImage: https://ucarecdn.com/77e64116-0a8f-4eff-a57b-30aa7518d505/
-phone: 074 9124 7853
+subtitle: How to get in touch
+phone: Find us on Facebook and Instagram
+email: ""
 meta:
   description: This is a meta description.
   title: Contact Page
 address: 404 James St, Burleigh Heads QLD 4220
-template: ContactPage
-title: Contact Us
-subtitle: The easiest way to get in touch.
-email: ""
 locations:
   - lat: "-27.9654732"
     lng: "153.2432449"
